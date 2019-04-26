@@ -1,9 +1,12 @@
 def fizzbuzz(number)
-  if number % 3 == 0 && number % 5 == 0
+  multiple_of_3 = number % 3 == 0
+  multiple_of_5 = number % 5 == 0
+  
+  if multiple_of_3 && multiple_of_5
     "fizzbuzz"
-  elsif number % 3 == 0
+  elsif multiple_of_3
     "fizz"
-  elsif number % 5 == 0
+  elsif multiple_of_5
     "buzz"
   else
     number
